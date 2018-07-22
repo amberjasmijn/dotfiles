@@ -7,7 +7,7 @@ Essentials to run and install other packages and utilities.
 - [x] Xcode
 - [x] Homebrew
 - [x] Homebrew cask
-- [] NVM
+- [ ] NVM
 
 ## Packages (brew)
 - [x] findutils
@@ -36,11 +36,11 @@ Essentials to run and install other packages and utilities.
 - [x] Skype
 
 ## Essentials
-- [] node.js & node
+- [ ] node.js & node
 
 ## Packages (npm)
-- [] TypeScript
-- [] Gulp
+- [ ] TypeScript
+- [ ] Gulp
 
 ### Enhancements
-- [] Powerline font
+- [ ] Powerline font
