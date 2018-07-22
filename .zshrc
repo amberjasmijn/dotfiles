@@ -8,7 +8,12 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
 DEFAULT_USER=amberbrookhuis
 
-plugins=(git)
+plugins=(
+  git 
+  yarn
+  thefuck
+  postgres
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,4 +43,9 @@ init-ts-project() {
   yarn add -D typescript
   echo "node_modules" > .gitignore
   yarn tsc --init
+}
+
+copydir() {
+  emulate -L zsh
+  print -n $PWD | clipcopy
 }
