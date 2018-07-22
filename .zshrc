@@ -6,12 +6,11 @@ ZSH_THEME="agnoster"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
-DEFAULT_USER=amberbrookhuis
+DEFAULT_USER=$USER
 
 plugins=(
   git 
   yarn
-  thefuck
   postgres
 )
 
