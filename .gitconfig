@@ -1,13 +1,15 @@
 [user]
 	name = Amber Brookhuis	
 	email = amberbrookhuis@gmail.com
-
-[github]
-	user = amberjasmijn
+	username = amberjasmijn
 
 [core]
+	editor = vim
         excludesfile = /Users/amberbrookhuis/.gitignore_global
         autocrlf = input
+
+[diff]
+	tool = vimdiff
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
