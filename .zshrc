@@ -4,7 +4,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_THEME="agnoster"
-ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
 DEFAULT_USER=$USER
@@ -29,8 +28,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Aliases
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 driveby() {
   lsof -P | grep ":$1" | awk '{print $2}' | xargs kill
@@ -49,3 +48,5 @@ copydir() {
   emulate -L zsh
   print -n $PWD | clipcopy
 }
+
+eval "$(rbenv init -)"
